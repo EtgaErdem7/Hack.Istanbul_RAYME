@@ -1,127 +1,26 @@
-//============================================================================
-// Name        : dynamicRerouter.cpp
-// Author      : Rayme
-// Version     : 
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
+package App;
 
-#include <iostream>
-#include "string.h"
+import java.util.*;
 
-using namespace std;
+public class Main {
 
-class InputUsr{
-private:
-	string origin;
-	string dest;
+	public static void main(String[] args) {
 
-public:
-	InputUsr(string o, string d) {
-		origin = o;
-		dest = d;
+		InputUsr input = new InputUsr("Paris", "Istanbul");
+		input.setCompansation(1000);
+		input.setCompansation(10);
+		
+		LinkedList<Road> roads = new LinkedList<Road>();
+		
+		roads.add(new Road());
+		roads.get(0).setDistance(1000); //Istanbul - Paris is 1000km.
+
+		
+		
+		
+		
+		
+		
 	}
 
-
-	void setOrigin(string o){
-		origin = o;
-	}
-	string getOrigin(){
-		return origin;
-	}
-	void setDest(string d){
-		dest = d;
-	}
-	string getDest(){
-		return dest;
-	}
-};
-
-class InputAPI{
-
-private:
-	int trafficRate;
-	string failedEqpName;
-	int eqpFailRate;
-	int accidentRate;
-
-public:
-	int getAccidentRate() const {
-		return accidentRate;
-	}
-
-	void setAccidentRate(int accidentRate) {
-		this->accidentRate = accidentRate;
-	}
-
-	int getEqpFailRate() const {
-		return eqpFailRate;
-	}
-
-	void setEqpFailRate(int eqpFailRate) {
-		this->eqpFailRate = eqpFailRate;
-	}
-
-	const string& getFailedEqpName() const {
-		return failedEqpName;
-	}
-
-	void setFailedEqpName(const string& failedEqpName) {
-		this->failedEqpName = failedEqpName;
-	}
-
-	int getTrafficRate() const {
-		return trafficRate;
-	}
-
-	void setTrafficRate(int trafficRate) {
-		this->trafficRate = trafficRate;
-	}
-};
-
-
-class costCalc{
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-};
-
-
-int main() {
-
-
-	InputUsr input("Paris", "Istanbul");
-
-
-
-
-
-
-
-	return 0;
 }
