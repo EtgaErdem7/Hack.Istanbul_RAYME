@@ -1,0 +1,52 @@
+//============================================================================
+// Name        : dynamicRerouter.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include "string.h"
+
+using namespace std;
+
+class Input{
+private:
+	string origin;
+	string dest;
+
+public:
+	Input(string o, string d) {
+		origin = o;
+		dest = d;
+	}
+
+
+	void setOrigin(string o){
+		origin = o;
+	}
+	string getOrigin(){
+		return origin;
+	}
+	void setDest(string d){
+		dest = d;
+	}
+	string getDest(){
+		return dest;
+	}
+
+
+};
+
+
+
+int main() {
+
+
+	Input input("Paris", "Istanbul");
+
+
+
+	return 0;
+}
